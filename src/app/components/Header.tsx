@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import { HandleLink } from './HandleLink';
 import { useState } from 'react';
