@@ -25,3 +25,7 @@
   after:absolute after:top-9 after:left-0 after:w-1/2 after:h-1
   after:bg-pink after:rounded-sm;
 }
+
+.icon {
+  @apply block p-3 bg-white/25 rounded-2xl;
+}
