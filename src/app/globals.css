@@ -29,3 +29,7 @@
 .icon {
   @apply block p-3 bg-white/25 rounded-2xl;
 }
+
+.circle {
+  @apply after:w-[53.125rem] after:h-[53.125rem] after:absolute after:rounded-full after:border-[1px] after:border-[#E1E1E1]/25 after:top-[33.75rem] after:left-[76.063rem];
+}
