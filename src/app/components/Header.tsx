@@ -10,7 +10,7 @@ export default function Header() {
   // Adicionar lógica para mudar a class Active
 
   return (
-    <header className='flex items-center justify-between px-40 bg-black text-yellow-50 w-full h-[7.5rem]'>
+    <header className='flex items-center justify-between text-yellow-50 w-full h-[7.5rem] mb-[3.375rem]'>
       <h1 className='font-bold text-pink text-4xl leading-[2.828rem]'>
         Gath<span className='text-white'>Session</span>.
       </h1>

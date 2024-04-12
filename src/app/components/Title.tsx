@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Title() {
   return (
-    <section className='text-white w-[49rem] h-[33.688]'>
+    <section className='text-white w-[49rem] h-[33.688] mt-[2.625rem]'>
       <h2 className='font-bold text-[5rem] leading-[6.285rem]'>
         Build your best community starting from here.
       </h2>

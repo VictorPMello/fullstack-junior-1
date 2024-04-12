@@ -2,9 +2,7 @@ import Image from 'next/image';
 
 export default function ImagesContent() {
   return (
-    <section
-      className='
-    flex gap-8'>
+    <section className='flex gap-8'>
       <div className='flex flex-col gap-8'>
         <Image
           className='rounded-[5.625rem] bg-[#6E1FED]'
@@ -37,7 +35,7 @@ export default function ImagesContent() {
           height={509}
         />
       </div>
-      <div>
+      <div className='flexCenter'>
         <Image
           className='rounded-[5.625rem] bg-[#F4B840]'
           src='/positive-dark.png'

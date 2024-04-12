@@ -16,6 +16,10 @@
   }
 }
 
+.screen {
+  @apply bg-[#2B2D38] px-40 relative w-screen h-screen overflow-hidden;
+}
+
 .flexCenter {
   @apply flex items-center justify-center;
 }
@@ -31,5 +35,5 @@
 }
 
 .circle {
-  @apply after:w-[53.125rem] after:h-[53.125rem] after:absolute after:rounded-full after:border-[1px] after:border-[#E1E1E1]/25 after:top-[33.75rem] after:left-[76.063rem];
+  @apply block absolute rounded-full border-[1px] border-[#E1E1E1]/25 -z-10;
 }
