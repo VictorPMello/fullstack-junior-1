@@ -1,8 +1,16 @@
 'use client';
 
 import Image from 'next/image';
+import { Merriweather } from 'next/font/google';
+
 import { HandleLink } from './HandleLink';
 import { useState } from 'react';
+
+const merriweather = Merriweather({
+  weight: '700',
+  display: 'fallback',
+  subsets: ['latin'],
+});
 
 export default function Header() {
   const [activeLink, setActiveLink] = useState('active');
@@ -11,7 +19,8 @@ export default function Header() {
 
   return (
     <header className='flex items-center justify-between text-yellow-50 w-full h-[7.5rem] mb-[3.375rem]'>
-      <h1 className='font-bold text-pink text-4xl leading-[2.828rem]'>
+      <h1
+        className={`${merriweather.className} , font-bold text-pink text-4xl leading-[2.828rem]`}>
         Gath<span className='text-white'>Session</span>.
       </h1>
       <nav className='flexCenter gap-20'>

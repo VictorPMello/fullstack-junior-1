@@ -16,8 +16,14 @@
   }
 }
 
+/* body {
+  position: static;
+  max-width: 100vw;
+  max-height: 100vh;
+} */
+
 .screen {
-  @apply bg-[#2B2D38] px-40 relative w-screen h-screen overflow-hidden;
+  @apply bg-[#2B2D38] px-40 fixed w-screen h-screen overflow-hidden;
 }
 
 .flexCenter {

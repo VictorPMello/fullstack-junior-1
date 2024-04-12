@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Header />
 
-      <main className='flexCenter'>
+      <main className='flexCenter gap-[1.688rem]'>
         <div className='flex flex-col gap-[7.125rem]'>
           <Title />
           <ServiceContent />

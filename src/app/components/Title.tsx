@@ -1,10 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Merriweather } from 'next/font/google';
+
+const merriweather = Merriweather({
+  weight: '700',
+  display: 'fallback',
+  subsets: ['latin'],
+});
 
 export default function Title() {
   return (
     <section className='text-white w-[49rem] h-[33.688] mt-[2.625rem]'>
-      <h2 className='font-bold text-[5rem] leading-[6.285rem]'>
+      <h2
+        className={`${merriweather.className} ,font-bold text-[5rem] leading-[6.285rem]`}>
         Build your best community starting from here.
       </h2>
       <p
