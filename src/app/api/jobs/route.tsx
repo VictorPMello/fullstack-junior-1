@@ -1,7 +1,10 @@
-import { getAll } from './getService';
+import { NextRequest } from 'next/server';
+import { getAll, getByLevel } from './getService';
 
-export async function GET() {
-  const test = await getAll();
+export function GET(req: NextRequest) {
+  const searchParams = req.nextUrl.searchParams.get('level');
 
-  return test;
+  if (searchParams) return getByLevel(searchParams);
+
+  return getAll();
 }
