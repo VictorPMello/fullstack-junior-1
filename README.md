@@ -1,5 +1,11 @@
 # Desafio Técnico - Full Stack Junior
 
+- Nome completo: Victor Pinheiro Mello
+- Linkedin: https://www.linkedin.com/in/victor-mello-dev/
+- Github: https://github.com/VictorPMello
+- Telefone: (75) 98216-5634
+- Email: victormello7003@hotmail.com
+
 ## Objetivos do desafio
 
 Este desafio irá verificar se o candidato possuí as seguintes habilidades em um nível básico:
