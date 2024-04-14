@@ -1,14 +1,11 @@
+import { middleware } from '../middleware';
 import { validateBody } from './Service';
 import { NextRequest } from 'next/server';
 
 export async function POST(req: NextRequest) {
-  const auth = req.headers.get('Authorization');
+  const auth = middleware(req);
 
-  if (auth !== 'naranja-labs')
-    return Response.json(
-      { message: 'Unauthorized' },
-      { status: 401 }
-    );
+  if (auth.status === 401) return auth;
 
   try {
     const body = await req.json();
